@@ -4,15 +4,16 @@ window.onload = function() {
 
     boton.addEventListener("click", function() {
 
-        contenido.classList.add("fade-out");
+        contenido.style. transition ="opacity 0.8s ease";
+        contenido.style.opacity ="0";
 
         setTimeout(function() {
            contenido.innerHTML = `
-             <div class="fade-in">
                  <h1>Bienvenida a nuestro viaje ✨</h1>
                  <p>Mes 6... y seguimos escribiendo historia.</p>
-             </div>
         `;
+
+            contenido.style.opacity ="1";
     }, 800);
   });
 };
