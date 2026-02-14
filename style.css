@@ -19,3 +19,20 @@ p {
     font-size: 16px;
     opacity: 0.7;
 }
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: aparecer 1s forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+    }
+}
+
