@@ -7,7 +7,10 @@ body {
 }
 
 .container {
-    padding-top: 40vh;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   aligh-items: center;
 }
 
 h1 {
