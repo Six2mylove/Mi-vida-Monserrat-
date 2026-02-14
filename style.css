@@ -43,3 +43,19 @@ p {
     opacity: 1;
     transition: opacity 0.8s ease;
 }
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+}
+
