@@ -1,19 +1,24 @@
 window.onload = function() {
     const boton = document.getElementById("startButton");
     const contenido = document.getElementById("mainContent");
+    const historia = document.getElementById("historia");
 
     boton.addEventListener("click", function() {
-
-        contenido.style.transition = "opacity 0.8s ease";
+        
         contenido.style.opacity = "0";
 
         setTimeout(function() {
-           contenido.innerHTML = `
-                 <h1>Bienvenida a nuestro viaje ✨</h1>
-                 <p>Mes 6... y seguimos escribiendo historia.</p>
-        `;
+            contenido.style.display = "none";
+            historia.style.display = "block";
+            historia.style.opacity = "0";
+            historia.style.transition = "opacity 1s ease";
 
-            contenido.style.opacity ="1";
+            setTimeout(function(){
+                historia.style.opacity = "1";
+            }, 100);
+            
     }, 800);
+        
   });
+    
 };
