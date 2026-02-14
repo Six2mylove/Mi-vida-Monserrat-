@@ -4,8 +4,8 @@ window.onload = function() {
 
     boton.addEventListener("click", function() {
 
-        contenido.style. transition ="opacity 0.8s ease";
-        contenido.style.opacity ="0";
+        contenido.style.transition = "opacity 0.8s ease";
+        contenido.style.opacity = "0";
 
         setTimeout(function() {
            contenido.innerHTML = `
