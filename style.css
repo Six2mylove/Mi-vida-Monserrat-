@@ -38,4 +38,5 @@ p {
 
 #mainContent {
     opacity: 1;
+    transition: opacity 0.8s ease;
 }
