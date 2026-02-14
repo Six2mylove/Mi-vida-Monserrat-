@@ -3,9 +3,16 @@ window.onload = function() {
     const contenido = document.getElementById("mainContent");
 
     boton.addEventListener("click", function() {
-        contenido.innerHTML = `
-            <h1>Bienvenida a nuestro viaje ✨</h1>
-            <p>Mes 6... y seguimos escribiendo historia.</p>
+
+        contenido.classList.add("fade-out");
+
+        setTimeout(function() {
+           contenido.innerHTML = `
+             <div class="fade-in">
+                 <h1>Bienvenida a nuestro viaje ✨</h1>
+                 <p>Mes 6... y seguimos escribiendo historia.</p>
+             </div>
         `;
-    });
+    }, 800);
+  });
 };
